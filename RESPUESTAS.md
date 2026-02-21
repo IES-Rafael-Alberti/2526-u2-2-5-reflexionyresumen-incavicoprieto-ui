@@ -43,13 +43,98 @@ A continuación, presento un desglose más detallado de los contenidos organizad
 ---
 
 ### 2.1) Mapa/índice de la unidad (visión global)
-| Sección                       | Contenido Principal                                                                            |
-| :---------------------------- | :--------------------------------------------------------------------------------------------- |
-| **2.1. Taxonomía**            | Clasificación de incidentes (ENISA/CCN), niveles de peligrosidad e impacto.                    |
-| **2.2.1-2.2.2. SOC & SIEM**   | Ecosistema del SOC: funciones, roles (L1-L3), recolección de logs, alertas y casos de uso.     |
-| **2.2.3-2.2.4. Implantación** | Fases para implementar un SIEM: Planificación, Tecnología (Agentes vs Agentless) y Estrategia. |
-| **2.3.1. OSINT**              | Uso de fuentes abiertas para la recolección de inteligencia.                                   |
-| **2.4. Documentación**        | Cómo estructurar informes técnicos y registrar la trazabilidad de incidentes.                  |
+#### 2.1.1 Taxonomía de incidentes de ciberseguridad
+1. **Introducción**
+   1.1. Motivación
+   1.2. Incidente de seguridad
+2. **¿Que significa Taxonomía?**
+   2.1. ¿Qué es una Taxonomía en este contexto?
+   2.2. ¿Qué es la Taxonomía de Incidentes de Ciberseguridad?
+   2.3. ¿Por qué es importante?
+3. **Taxonomía de incidentes**
+   3.1. Factores a considerar en la clasificación de incidentes
+   3.2. Taxonomía de Referencia para la Clasificación de Incidentes de Seguridad
+      3.2.1. Contenido abusivo
+      3.2.2. Contenido dañino o malicioso
+      3.2.3. Obtención de información
+      3.2.4. Intento de intrusión
+      3.2.5. Intrusión
+      3.2.6. Disponibilidad
+      3.2.7. Compromiso de la información
+      3.2.8. Fraude
+      3.2.9. Vulnerable
+      3.2.10. Otros
+   3.2. Peligrosidad e impacto
+      3.2.1. Grado de gravedad/peligrosidad
+      3.2.2. Impacto/Alcance del incidente
+   3.3. Prioridades
+   3.4. Respuesta al incidente
+4. **Actividades**
+   4.1. Ejemplo
+   4.2. Actividad
+
+#### 2.2.1 Ecosistema de un SOC: Servicios y herramientas
+1. **Introducción**
+   1.1. ¿Qué es un SOC?
+   1.2. Objetivos principales de un SOC
+   1.3. Diferencias entre SOC, CERT, CIRT y CSIRT
+      1.3.1. Definición de términos
+      1.3.2. Relación y diferencias clave
+   1.4. Importancia de los SOC en la ciberseguridad empresarial
+      1.4.1. Amenazas crecientes
+      1.4.2. Beneficios de contar con un SOC
+      1.4.3. Relevancia estratégica
+2. **Componentes de un SOC**
+   2.1. Personas (Roles y desarrollo)
+   2.2. Procesos (Estandarización)
+   2.3. Tecnologías (SIEM, SOAR, Ticketing, Forense)
+   2.4. Servicios (Intelligence, Monitoring, Hunting)
+3. **Diseño y estructura de un SOC**
+   3.1. Organización interna vs. SOC tercerizado (MSSP)
+   3.2. Relación entre capacidades, servicios y procesos
+   3.3. Fases de implementación
+
+#### 2.2.2 ¿Qué es un SIEM?
+1. **Introducción a SIEM** (Productos y Roles)
+2. **Recopilación de registros** (Agentes, Syslog, Agentless)
+3. **Agregación y análisis** (EPS, Normalización, Enriquecimiento)
+4. **Almacenamiento de registros**
+5. **Creación de alertas** (Listas blancas/negras, Cola larga)
+6. **Gestión de incidentes** (Definiciones, IMS, Playbooks)
+
+#### 2.2.2 Casos de Uso en un SOC
+1. ¿Qué es un caso de uso?
+2. ¿Cómo se crean los casos de uso?
+3. 10 casos de uso que todo servicio SOC moderno debería tener
+4. Cómo gestionar los casos de uso en un SOC
+5. Conclusiones
+
+#### 2.2.3 Mejores prácticas para implementar una estrategia SIEM
+1. SIEM y componentes
+2. Estrategia para implementar un SIEM (Fases de planificación a mejora)
+3. Mejores prácticas para la implementación
+
+#### 2.2.4 Evolución de SIEM y SOAR
+1. La evolución del SIEM
+2. Herramientas SOAR
+3. El SIEM del futuro
+4. La necesidad de disponer de herramientas SOAR
+
+#### 2.3.1 Fuentes abiertas (OSINT)
+1. **Introducción a OSINT** (Ciclo y Aplicaciones)
+2. **Uso en Ciberseguridad** (Pentesting, Forense, Prevención)
+3. **Proceso de OSINT** (Planificación, Adquisición, Análisis)
+4. **Técnicas** (Dorking, Metadatos, WHOIS, Redes Sociales)
+5. **Herramientas** (Shodan, Maltego, SpiderFoot)
+6. **Retos Éticos y Legales** (GDPR, Privacidad)
+
+#### 2.4 Documentación e informes de incidentes
+1. **Introducción y Gestión** (Ciclo de vida)
+2. **¿Por qué documentar?** (Inteligencia, Lecciones aprendidas)
+3. **¿Qué debemos documentar?** (Información técnica, Gestión)
+4. **Seguimiento y cierre formal**
+5. **Lecciones aprendidas** (Análisis post-mortem)
+6. **El arte de escribir informes técnicos** (Estructura y Redacción)
 
 ### 2.2) Conceptos clave (lista breve)
 Para entender bien la unidad, es fundamental manejar con soltura estos términos técnicos:
