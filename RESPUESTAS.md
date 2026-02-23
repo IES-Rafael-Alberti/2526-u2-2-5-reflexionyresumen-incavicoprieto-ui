@@ -44,30 +44,30 @@ A continuación, presento un desglose más detallado de los contenidos organizad
 ### 2.1) Mapa/índice de la unidad (visión global)
 #### 2.1.1 Taxonomía de incidentes de ciberseguridad
 1. **Introducción**
-   1.1. Motivación
-   1.2. Incidente de seguridad
+    1.1. Motivación
+    1.2. Incidente de seguridad
 2. **¿Que significa Taxonomía?**
-   2.1. ¿Qué es una Taxonomía en este contexto?
-   2.2. ¿Qué es la Taxonomía de Incidentes de Ciberseguridad?
-   2.3. ¿Por qué es importante?
+    2.1. ¿Qué es una Taxonomía en este contexto?
+    2.2. ¿Qué es la Taxonomía de Incidentes de Ciberseguridad?
+    2.3. ¿Por qué es importante?
 3. **Taxonomía de incidentes**
-   3.1. Factores a considerar en la clasificación de incidentes
-   3.2. Taxonomía de Referencia para la Clasificación de Incidentes de Seguridad
-      3.2.1. Contenido abusivo
-      3.2.2. Contenido dañino o malicioso
-      3.2.3. Obtención de información
-      3.2.4. Intento de intrusión
-      3.2.5. Intrusión
-      3.2.6. Disponibilidad
-      3.2.7. Compromiso de la información
-      3.2.8. Fraude
-      3.2.9. Vulnerable
-      3.2.10. Otros
-   3.2. Peligrosidad e impacto
-      3.2.1. Grado de gravedad/peligrosidad
-      3.2.2. Impacto/Alcance del incidente
-   3.3. Prioridades
-   3.4. Respuesta al incidente
+    3.1. Factores a considerar en la clasificación de incidentes
+    3.2. Taxonomía de Referencia para la Clasificación de Incidentes de Seguridad
+        3.2.1. Contenido abusivo
+        3.2.2. Contenido dañino o malicioso
+        3.2.3. Obtención de información
+        3.2.4. Intento de intrusión
+        3.2.5. Intrusión
+        3.2.6. Disponibilidad
+        3.2.7. Compromiso de la información
+        3.2.8. Fraude
+        3.2.9. Vulnerable
+        3.2.10. Otros
+    3.3. Peligrosidad e impacto
+        3.3.1. Grado de gravedad/peligrosidad
+        3.3.2. Impacto/Alcance del incidente
+    3.3. Prioridades
+    3.4. Respuesta al incidente
 4. **Actividades**
    4.1. Ejemplo
    4.2. Actividad
@@ -77,21 +77,21 @@ A continuación, presento un desglose más detallado de los contenidos organizad
    1.1. ¿Qué es un SOC?
    1.2. Objetivos principales de un SOC
    1.3. Diferencias entre SOC, CERT, CIRT y CSIRT
-      1.3.1. Definición de términos
-      1.3.2. Relación y diferencias clave
+        1.3.1. Definición de términos
+        1.3.2. Relación y diferencias clave
    1.4. Importancia de los SOC en la ciberseguridad empresarial
-      1.4.1. Amenazas crecientes
-      1.4.2. Beneficios de contar con un SOC
-      1.4.3. Relevancia estratégica
+        1.4.1. Amenazas crecientes
+        1.4.2. Beneficios de contar con un SOC
+        1.4.3. Relevancia estratégica
 2. **Componentes de un SOC**
-   2.1. Personas (Roles y desarrollo)
-   2.2. Procesos (Estandarización)
-   2.3. Tecnologías (SIEM, SOAR, Ticketing, Forense)
-   2.4. Servicios principales: Flujo detallado de funcionamiento(Intelligence, Monitoring, Hunting)
+     2.1. Personas (Roles y desarrollo)
+     2.2. Procesos (Estandarización)
+     2.3. Tecnologías (SIEM, SOAR, Ticketing, Forense)
+     2.4. Servicios principales: Flujo detallado de funcionamiento(Intelligence, Monitoring, Hunting)
 3. **Diseño y estructura de un SOC**
-   3.1. Organización interna vs. SOC tercerizado (MSSP)
-   3.2. Relación entre capacidades, servicios y procesos
-   3.3. Fases de implementación: Negocio, personas, tecnologías y servicios
+     3.1. Organización interna vs. SOC tercerizado (MSSP)
+     3.2. Relación entre capacidades, servicios y procesos
+     3.3. Fases de implementación: Negocio, personas, tecnologías y servicios
 
 #### 2.2.2 ¿Qué es un SIEM?
 1. **Introducción a SIEM** 
@@ -138,26 +138,26 @@ A continuación, presento un desglose más detallado de los contenidos organizad
    6.5. ¿Qué hace el analista SOC cuando ocurre una alerta?
 
 #### 2.2.2 Casos de Uso en un SOC
-1. ¿Qué es un caso de uso?
-2. ¿Cómo se crean los casos de uso?
-3. 10 casos de uso que todo servicio SOC moderno debería tener
-4. Cómo gestionar los casos de uso en un SOC
-5. Conclusiones
+1. **¿Qué es un caso de uso?**
+2. **¿Cómo se crean los casos de uso?**
+3. **10 casos de uso que todo servicio SOC moderno debería tener**
+4. **Cómo gestionar los casos de uso en un SOC**
+5. **Conclusiones**
 
 #### 2.2.3 Mejores prácticas para implementar una estrategia SIEM
-1. SIEM y componentes
-2. Estrategia para implementar un SIEM 
+1. **SIEM y componentes**
+2. **Estrategia para implementar un SIEM**
     2.1. Fase de descubrimiento y planificación
     2.2. Fase piloto
     2.3. Fase de implementación
     2.4. Fase de mejora continua
-3. Las mejores prácticas para la implementación de SIEM
+3. **Las mejores prácticas para la implementación de SIEM**
 
 #### 2.2.4 Evolución de SIEM y SOAR
-1. La evolución del SIEM
-2. Herramientas SOAR
-3. El SIEM del futuro
-4. La necesidad de disponer de herramientas SOAR
+1. **La evolución del SIEM**
+2. **Herramientas SOAR**
+3. **El SIEM del futuro**
+4. **La necesidad de disponer de herramientas SOAR**
 
 #### 2.3.1 Fuentes abiertas (OSINT)
 1. **Introducción a OSINT**
@@ -321,11 +321,11 @@ A continuación, presento un desglose más detallado de los contenidos organizad
 
 ### 2.2) Conceptos clave (lista breve)
 Para entender bien la unidad, es fundamental manejar con soltura estos términos técnicos:
-- **Taxonomía de Incidentes**: Marco común (ej. Guía CCN-STIC 817) para que todos hablemos el mismo idioma al reportar.
-- **IoC (Indicador de Compromiso)**: Evidencias técnicas (IPs, hashes, dominios) que señalan un posible compromiso.
-- **SIEM (Security Information and Event Management)**: El corazón del SOC; correlaciona eventos para detectar anomalías.
-- **SOAR**: Automatización y orquestación; permite responder a incidentes a la velocidad de la red.
-- **Playbooks**: Manuales con los pasos exactos a seguir para cada tipo de alerta (ej: phishing, malware).
+- **Taxonomía de Incidentes**: Se trata de un marco común (ej. Guía CCN-STIC 817) para que todos hablemos el mismo idioma al reportar.
+- **IoC (Indicador de Compromiso)**: Son evidencias técnicas (IPs, hashes, dominios) que señalan un posible compromiso.
+- **SIEM (Security Information and Event Management)**: Es el corazón del SOC; correlaciona eventos para detectar anomalías.
+- **SOAR**: Es la automatización y orquestación; permite responder a incidentes a la velocidad de la red.
+- **Playbooks**: Son manuales con los pasos exactos a seguir para cada tipo de alerta (ej: phishing, malware).
 - **Verdadero/Falso Positivo**: La clave de la eficiencia del analista; distinguir un ataque real de un error de configuración.
 
 ### 2.3) Procesos / procedimientos (pasos o checklist)
@@ -378,4 +378,4 @@ Para consolidar este resumen me he apoyado en los documentos técnicos de la uni
 
 
 ## 4) Conclusión (cierre)
-- Al final, esta unidad me ha servido para poner los pies en la tierra y ver cómo se trabaja de verdad. Me voy con la idea de que aunque el SIEM es el músculo, el analista es el cerebro que tiene que tomar las decisiones. Me ha encantado poder unir la criminología con la parte técnica y siento que ahora tengo una visión mucho más clara de cómo se defiende una empresa, más allá de lo que digan los libros.
+- Como conclusión, puedo decir que esta unidad ha sido una puerta a nuevas ramas de la Ciberseguridad que desconocía y han acabado siendo mi objetivo principal. También me ha ayudado a diferenciar entre los distintos tipos de SOC y CERT/CSIRT, así como a entender mejor cómo funcionan y qué servicios ofrecen. He sentido que esta unidad ha sido el nexo de unión entre mis conocicmientos en criminalística y ciberseguridad, unido a mi experiencia previa como investigadora (en la redacción de informes, análisis de pruebas, etc.), por lo que me siento muy motivada a continuar por este camino. Quizás parezca que me estoy centrando demasiado en el apartado de fuentes abiertas de esta unidad y le esté dando menos importancia a los otros (que reconozco su importancia, aunque no lo mencione tanto), pero esto es porque realmente ha sido un punto de inflexión para mi. 
