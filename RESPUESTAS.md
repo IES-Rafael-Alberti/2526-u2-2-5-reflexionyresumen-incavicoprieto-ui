@@ -181,18 +181,17 @@ Para consolidar este resumen me he apoyado en los documentos técnicos de la uni
 ### Recursos y Documentación
 - **Guía Nacional de Notificación y Gestión de Ciberincidentes (INCIBE/CCN)**: Clave para la sección de taxonomía y procesos de escalado.
 - **Guía CCN-STIC 817**: Para entender cómo se dimensiona operativamente un SOC.
-- **Laboratorios LetsDefend**: Práctica real en la gestión de incidentes y uso de Playbooks en entornos SIEM.
 - **MaGMa Use Case Framework**: Marco para la gestión estratégica de casos de uso financieros llevados a la ciberseguridad.
 
 ### Evidencia 1
-- Archivo: `evidencias/01_...`
-- Qué demuestra:
-- Qué he aprendido:
+- Archivo: `evidencias/evidencia-01.pdf`
+- Qué demuestra: Este informe documenta la investigación OSINT (Open Source Intelligence) realizada para rastrear y perfilar varios objetivos mediante fuentes abiertas. Incluye el uso de técnicas de dorking, análisis de metadatos, búsqueda en registros WHOIS y redes sociales.
+- Qué he aprendido: He aprendido a utilizar herramientas y técnicas avanzadas de búsqueda para obtener la información requerida de forma ética y legal, comprendiendo cómo el rastro digital puede ser utilizado tanto para la defensa como para la inteligencia de amenazas.
 
 ### Evidencia 2
-- Archivo: `evidencias/02_...`
-- Qué demuestra:
-- Qué he aprendido:
+- Archivo: `evidencias/evidencia-02.md`
+- Qué demuestra: Se trata de un resumen ejecutivo y tabla comparativa de los principales proveedores de servicios SOC y CERT/CSIRT en España (S2 Grupo, Thales, Ackcent, etc.), analizando sus capacidades, stack tecnológico y certificaciones, según las necesidades que se requerían.
+- Qué he aprendido: Este análisis me ha enseñado a evaluar qué características (como el modelo co-managed, la disponibilidad 24/7 o la especialización en OT) son críticas según el perfil y los riesgos de cada empresa, permitiendo una selección de proveedores mucho más alineada con sus necesidades reales.
 
 
 ## 4) Conclusión (cierre)
