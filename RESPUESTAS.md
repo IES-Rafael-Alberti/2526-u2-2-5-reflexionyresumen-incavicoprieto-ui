@@ -8,7 +8,6 @@
 ---
 
 ## 1) Reflexión crítica (preguntas)
-Responde con **lenguaje técnico** y **argumentos** (no solo opiniones). Si procede, usa ejemplos, riesgos y decisiones justificadas.
 
 ### 1.1) ¿Qué te han parecido los temas tratados en la unidad?
 - Esta unidad me ha parecido más atractiva que la unidad 1. Desde la charla de Jezer Ferreira en Córdoba, me he sentido muy atraida por OSINT, así que estudiarla y practicarla en esta unidad ha sido el punto definitivo para reafirmar que quiero seguir formándome en esta dirección. He sentido que esta unidad era más práctica que la anterior. Aquí ya no nos centrábamos únicamente en la documentación, si no que debíamos realizar nosotros mismos la investigación/análisis y crear nuestros informes, una tarea que me gusta especialmente. 
@@ -88,19 +87,55 @@ A continuación, presento un desglose más detallado de los contenidos organizad
    2.1. Personas (Roles y desarrollo)
    2.2. Procesos (Estandarización)
    2.3. Tecnologías (SIEM, SOAR, Ticketing, Forense)
-   2.4. Servicios (Intelligence, Monitoring, Hunting)
+   2.4. Servicios principales: Flujo detallado de funcionamiento(Intelligence, Monitoring, Hunting)
 3. **Diseño y estructura de un SOC**
    3.1. Organización interna vs. SOC tercerizado (MSSP)
    3.2. Relación entre capacidades, servicios y procesos
-   3.3. Fases de implementación
+   3.3. Fases de implementación: Negocio, personas, tecnologías y servicios
 
 #### 2.2.2 ¿Qué es un SIEM?
-1. **Introducción a SIEM** (Productos y Roles)
-2. **Recopilación de registros** (Agentes, Syslog, Agentless)
-3. **Agregación y análisis** (EPS, Normalización, Enriquecimiento)
+1. **Introducción a SIEM** 
+   1.1 Productos SIEM
+   1.2 Analista SIEM y SOC
+2. **Recopilación de registros**
+  2.1 Conceptos: log y logging
+  2.2 Métodos de recopilación
+    2.2.1. Agentes de registro
+       2.2.1.1 Ventajas del método
+       2.2.1.2. Contras del método
+   2.2.2 Syslog
+        2.2.2.1. Formato de registro del sistema
+   2.2.3. Agentes de terceros
+       2.2.4.1. Agentes de cógido abierto populares
+   2.2.4. Sin agente (agentless)
+       2.2.4.1. Recolección manual
+3. **Agregación y análisis** 
+  3.1. Agregador y EPS
+     3.1.1. ¿Qué es EPS?
+     3.1.2. Escalado del agregador
+     3.1.3. Proceso del agregador de registros
+     3.1.4. Modificación de registros
+     3.1.5. Enriquecimiento de registros
+       3.1.5.1. Geolocalización
+       3.1.5.2. DNS
 4. **Almacenamiento de registros**
-5. **Creación de alertas** (Listas blancas/negras, Cola larga)
-6. **Gestión de incidentes** (Definiciones, IMS, Playbooks)
+5. **Creación de alertas** 
+  5.1. Lista negra
+  5.2. Lista blanca
+  5.3. Análisis de registro de cola larga
+6. **Gestión de incidentes** 
+  6.1. Definiciones básicas sobre la gestión de incidentes
+    6.1.1. Alerta
+    6.1.2. Evento
+    6.1.3. Incidente
+    6.1.4. Alerta de verdadero positivo
+    6.1.5. Alerta de falso positivo
+   6.2. Sistemas de gestión de incidentes (IMS)
+     6.2.1. ¿Cómo funciona un IMS?
+   6.3. Nombre del caso/alerta
+   6.4. Playbooks
+     6.4.1. ¿Por qué son importantes los playbooks?
+   6.5. ¿Qué hace el analista SOC cuando ocurre una alerta?
 
 #### 2.2.2 Casos de Uso en un SOC
 1. ¿Qué es un caso de uso?
@@ -111,8 +146,12 @@ A continuación, presento un desglose más detallado de los contenidos organizad
 
 #### 2.2.3 Mejores prácticas para implementar una estrategia SIEM
 1. SIEM y componentes
-2. Estrategia para implementar un SIEM (Fases de planificación a mejora)
-3. Mejores prácticas para la implementación
+2. Estrategia para implementar un SIEM 
+    2.1. Fase de descubrimiento y planificación
+    2.2. Fase piloto
+    2.3. Fase de implementación
+    2.4. Fase de mejora continua
+3. Las mejores prácticas para la implementación de SIEM
 
 #### 2.2.4 Evolución de SIEM y SOAR
 1. La evolución del SIEM
@@ -121,20 +160,164 @@ A continuación, presento un desglose más detallado de los contenidos organizad
 4. La necesidad de disponer de herramientas SOAR
 
 #### 2.3.1 Fuentes abiertas (OSINT)
-1. **Introducción a OSINT** (Ciclo y Aplicaciones)
-2. **Uso en Ciberseguridad** (Pentesting, Forense, Prevención)
-3. **Proceso de OSINT** (Planificación, Adquisición, Análisis)
-4. **Técnicas** (Dorking, Metadatos, WHOIS, Redes Sociales)
-5. **Herramientas** (Shodan, Maltego, SpiderFoot)
-6. **Retos Éticos y Legales** (GDPR, Privacidad)
+1. **Introducción a OSINT**
+    1.1. Importancia y Aplicaciones de OSINT en Ciberseguridad.
+       1.1.1. Principales usos de OSINT en ciberseguridad
+   1.2. Diferencias entre OSINT y otras metodologías de recopilación de información
+   1.3. Proceso OSINT en una vista rápida
+   1.4. Actividades
+2. **Uso en Ciberseguridad** 
+    2.1. OSINT en Auditoría de Seguridad e Investigación Forense
+    2.2. OSINT en Pentesting y Hacking Ético
+    2.3. OSINT en Prevención de Atques y Detección de Amenazas (Threat Intelligence)
+    2.4. Riesgos y Límites Legales de OSINT
+    2.5. Actividades
+3. **Proceso de OSINT** 
+  3.1. Ciclo OSINT: Fases y Estructura
+  3.2. Planificación y Dirección
+    3.2.1. Errores comunes en esta fase
+   3.3. Identicación de Fuentes de Información
+   3.4. Adquisición de Información
+     3.4.1. Técnicas de adquisición OSINT
+   3.5. Procesamiento y Organización de Datos
+    3.5.1. Errores comunes en esta fase
+   3.6. Análisis e Interpretación de Datos
+     3.6.1. Métodos de análisis OSINT
+   3.7. Difusión y Aplicación de la Inteligencia
+    3.7.1. Formatos comunes de presentación
+   3.8. Actividades
+4. **Técnicas de OSINT** 
+  4.1.Footprinting y Fingerprinting
+  4.2. Google Dorking: Búsquedas Avanzadas en Google  
+      4.2.1. Recursos para Google Dorking
+   4.3. Recopilación de Metadatos en Documentos
+     4.3.1. Herramientas OSINT para extraer metadatos
+   4.4. Búsqueda de Información en Redes Sociales
+     4.4.1. Herramientas para OSINT en redes sociales.
+   4.5. Identificación de Insfraestructuras con WHOIS,DNS y Direcciones IP
+     4.5.1. Métodos comunes
+   4.6. Monitorización de la Deep y Dark Web
+     4.6.1. Herramientas para exploración en la Dark Web
+   4.7. Análisis de Imágenes y Vídeos con Técnicas Forenses
+     4.7.1. Técnicas forenses en imágenes
+   4.8. Actividades
+5. **Herramientas** 
+  5.1. Motores de Búsqueda Especializados
+    5.1.1. Herramientas destacadas
+   5.2. Shodan: Búsqueda de Dispositivos Conectados a Internet
+     5.2.1. Características principales de Shodan
+     5.2.2. Recursos útiles para Shodan
+   5.3. Wayback Machine: Análisis de Versiones Antiguas de Sitios Web
+   5.4. Maltego: Visualización y Análisis de Relaciones
+     5.4.1. Usos de Maltego en OSINT
+   5.5. SpiderFoot: Automatización de la Recopilación OSINT
+   5.6. OSINT Framework: Repositorio de Herramientas OSINT
+   5.7. Buscadores de Información en Redes Sociales
+   5.8. Técnicas de Búsqueda en Telegram, Linkedin, Twitter, Facebook
+   5.9. Actividades
+6. **Casos Prácticos y Actividades de OSINT**
+7. **Retos Éticos y Legales de OSINT**
+    7.1. Privacidad y Derechos de los Usuarios
+      7.1.1. Principales preocupaciones sobre privacidad en OSINT
+   7.2. Regulaciones Legales (GDPR, Código Penal, Normativa de Privacidad)
+     7.2.1. Principales regulaciones sobre privacidad
+   7.3. Buenas Prácticas y Uso Responsable de OSINT
+     7.3.1. Principios de uso ético de OSINT
+   7.4. Actividades
 
-#### 2.4 Documentación e informes de incidentes
-1. **Introducción y Gestión** (Ciclo de vida)
-2. **¿Por qué documentar?** (Inteligencia, Lecciones aprendidas)
-3. **¿Qué debemos documentar?** (Información técnica, Gestión)
-4. **Seguimiento y cierre formal**
-5. **Lecciones aprendidas** (Análisis post-mortem)
-6. **El arte de escribir informes técnicos** (Estructura y Redacción)
+#### 2.4.1 Documentación e informes de incidentes
+1. **Introducción**
+2. **La gestión de incidentes: marco legal**
+    2.1. ¿Qué es un incidente de seguridad?
+    2.2. ¿Qué es la gestión de incidentes?
+    2.3. El ciclo de vida de un incidentes
+3. **¿Por qué es tan importantedocumentar?** 
+    3.1. Generación de inteligencia de amenazas
+    3.2. Lecciones aprendiedas y mejora continua
+    3.3. Análisis y parametrización de sistemas de seguridad
+    3.4. Campañas de sensibilización efectivas
+    3.5. Cumplimiento normativo y legal
+    3.6. Conocimiento del adversario
+4. **¿Qué debemos documentar?** 
+   4.1. Información General del Incidente
+   4.2. Clasificación y Valoración
+   4.3. Detalles Técnicos
+   4.4.Gestión y Respuesta
+   4.5. Consecuencias y Análisis Post-Incidente
+5. **Seguimiento de incidentes:más allá de la resolución**
+   5.1. Seguimiento durante la resolución
+     5.1.1. Información de estado a mantener
+     5.1.2. Comunicación continua
+   5.2. Seguimiento post-resolución
+     5.2.1. Verificación de la resolución
+       5.2.1.1. Monitorización intensiva post-incidente
+       5.2.1.2. Verificación de IOCs
+       5.2.1.3. Validación con usuarios
+      5.2.2. Cierre formal del incidente
+   5.3. Lecciones aprendidas: el verdadero valor del incidente
+     5.3.1. Estructura del análisis de lecciones aprendidas
+       5.3.1.1. ¿Qué salion bien? (Reforzar fortalezas)
+       5.3.1.2. ¿Qué salió mal? (Identificar debilidades)
+       5.3.1.3. ¿Qué podemos mejorar? (Plan de acción)
+      5.3.2. Sesión de "post-mortem" o "restrospectiva"
+        5.3.2.1. Organización de la sesión
+        5.3.2.2. Reglas fundamentales
+        5.3.2.3. Agenda típica
+      5.3.3. Actualización de documentación y sistemas
+        5.3.3.1. Actualización de políticas de seguridad
+        5.3.3.2. Mejora de playbooks y runbooks
+        5.3.3.3. Casos de uso nuevos en el SIEM
+        5.3.3.4. Material para formación y concienciación
+        5.3.3.5. Actualización de planes de respuesta a incidentes
+      5.3.4. Seguimiento de mejoras implementadas
+6. **¿Cómo documentar un incidente? El arte de escribir informes técnicos**
+    6.1. La importancia de saber comunicar
+    6.2. Del contenido a la forma: enlace con la guía de redacción
+7. **Bibliografía**
+#### 2.4.2. Cómo escribir informes técnicos
+ 1. Introducción
+ 2. Cómo escribir informes técnicos y no morir en el intento
+    2.1. Consejos estratégicos
+      2.1.1. Determina los objetivos del informe
+      2.1.2. Identifica a tu audiencia
+      2.1.3. KISS (Keep is Simple, Stupid)
+      2.1.4. Ofrece valor
+   2.2. Consejos de estructura
+     2.2.1. Define una estructura base
+     2.2.2. Define el resto de puntos del informe creando un índice
+     2.2.3. El resumen ejecutivo es tu mejor amigo
+     2.2.4. Los anexos son el trastero de tu informe
+     2.2.5. Haz de tu informe una plantilla
+     2.2.6. Huye de los múltiples niveles anidados
+     2.2.7. Convierte tu informe en un recortable
+   2.3. Consejos de redacción
+     2.3.1. El corrector ortográfico no cuesta dinero
+     2.3.2. Cuidado con las frases largas
+     2.3.3. No escatimes con los párrafos
+     2.3.4. Elige usar voz pasiva o activa
+     2.3.5. Usa los tipos de letra con sabiduría
+     2.3.6. Usa las sangrías para que tu informe se lea mejor
+     2.3.7. Usa la terminología adecuada
+     2.3.8. Los gráficos cuestan, pero merecen la pena
+     2.3.9. Hazte con un libro de estilo
+   2.4. Consejos "espirituales"
+     2.4.1. Segundas y terceras lecturas nunca fueron malas
+     2.4.2. Haz que tus compañeros lean tu informe
+     2.4.3. Lee en voz alta tu informe/Explícaselo a alguien
+     2.4.4. Deshazte de tus coletillas
+     2.4.5. Practica, practica y practica
+3. Cómo escribir informes de incidentes de seguridad
+   3.1. Introducción a los informes de incidentes de seguridad
+   3.2. Consejos para informes de incidentes de seguridad
+     3.2.1. Conoce tus tipos de informe
+     3.2.1. Estructura tu informe
+     3.2.3. Exactitud por encima de todo
+     3.2.4. Cuenta lo que se ha hecho
+     3.2.5. Distingue claramente hechos de hipótesis
+     3.2.6. Dat todas tus acciones y genera una timeline de eventos
+     3.2.7. Crea un listado de equipos y ususarios afectados
+4. Información adicional
+5. Conclusiones
 
 ### 2.2) Conceptos clave (lista breve)
 Para entender bien la unidad, es fundamental manejar con soltura estos términos técnicos:
