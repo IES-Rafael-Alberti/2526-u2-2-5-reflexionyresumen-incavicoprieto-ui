@@ -92,7 +92,7 @@ Recomendación de nombres:
 - [x] He rellenado los datos del alumno/a en `README.md` y `RESPUESTAS.md`
 - [x] He respondido **todas** las preguntas en `RESPUESTAS.md`
 - [x] He incluido el **resumen esquematizado** contemplando todos los puntos
-- [ ] (Opcional) He incluido evidencias en `/evidencias/` y las he enlazado desde `RESPUESTAS.md`
+- [x] (Opcional) He incluido evidencias en `/evidencias/` y las he enlazado desde `RESPUESTAS.md`
 - [x] El repositorio está ordenado y es legible
 
 
